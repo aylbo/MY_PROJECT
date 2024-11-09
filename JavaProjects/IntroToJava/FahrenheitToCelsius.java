@@ -10,5 +10,8 @@ public class FahrenheitToCelsius {
         double celsius = (5.0/9) * (fahrenheit - 32);
         System.out.println(day + " Fahrenheit: " + fahrenheit);
         System.out.println(day + " Celsius: " + celsius);
+        if (fahrenheit > 70) {
+            System.out.println("Yay! Go to park.");
+        }
     }
 }

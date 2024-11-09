@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build C Program",
+        "type": "shell",
+        "command": "clang",
+        "args": ["-std=c11", "-Wall", "-arch", "arm64", "-o", "${fileBasenameNoExtension}", "${file}", "-lc"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Compile C program for Apple Silicon"
+      }
+    ]
+  }

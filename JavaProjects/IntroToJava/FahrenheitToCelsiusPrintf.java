@@ -1,3 +1,5 @@
+package JavaProjects.lib.IntroToJava;
+
 import java.util.Scanner;
 public class FahrenheitToCelsiusPrintf {
 	public static void main(String[] args) {

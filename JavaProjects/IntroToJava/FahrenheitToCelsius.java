@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class FahrenheitToCelsius {
     public static void main(String[] args) {
+        final int MAX_TEMP = 140;
         final int MIN_PARK_TEMP = 70;
         final int MAX_PARK_TEMP = 90;
 
@@ -12,6 +13,12 @@ public class FahrenheitToCelsius {
             int fahrenheit = input.nextInt();
             input.nextLine(); // cleans up newline at the end of user input
 
+            while (fahrenheit >= MAX_TEMP) {
+                System.out.println("Error: The fahrenheit value must be lower than " + MAX_TEMP);
+                System.out.print("Please enter another fahrenheit value: ");
+                fahrenheit = input.nextInt(); 
+            }
+            
             System.out.print("Enter a date in format of DayOfWeek: ");
             String day = input.next();
 
